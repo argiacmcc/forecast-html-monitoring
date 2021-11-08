@@ -1,51 +1,100 @@
 <!DOCTYPE html>
-<html lang=it>
- <head>
-        <title> CMCC </title>
-    </head>
-    <style>
-        #bannerimage {
-                        width: 100%;
-                        background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
-                        height: 805px;
-                        background-color: purple;
-                        background-position: center;
-        }
-        img {
-            max-width: 100%;
-            height:auto;
-        }
-        p.username {
-            font-weight: bold;
-        }
-    </style>
-    <body>
-        <h1 style="background-color:#28aef1;
-        color:white;
-        text-align:center"> Diagnostic </h1>
-        <h2>starting date 202111</h2>
+<html lang="it">
+  <head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+    <title>CMCC</title>
+  </head>
+  <style>
+    #bannerimage {
+      width: 100%;
+      background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+      height: 805px;
+      background-color: purple;
+      background-position: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    p.username {
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <h1 style="background-color: #28aef1; color: white; text-align: center">
+      Diagnostic
+    </h1>
 
+    <!--Navigation bar-->
+    <div id="top_bar_nav"></div>
 
+    <script>
+      $(function () {
+        $("#top_bar_nav").load("./top_bar_nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
 
+    <h2>starting date 202111</h2>
 
+    <img src="plots_folder_diag/SIE_202111.png" alt="SIE_202111" />
+    <img
+      src="plots_folder_diag/SPS3.5_202111_sss_timeseries.png"
+      alt="SPS3_5_202111_sss_timeseries"
+    />
+    <img
+      src="plots_folder_diag/SPS3.5_202111_sst_timeseries.png"
+      alt="SPS3_5_202111_sst_timeseries"
+    />
+    <img
+      src="plots_folder_diag/mslp_ano_forecast_glo_202111_m1.png"
+      alt="mslp_ano_forecast_glo_202111_m1"
+    />
+    <img
+      src="plots_folder_diag/precip_ano_forecast_glo_202111_m1.png"
+      alt="precip_ano_forecast_glo_202111_m1"
+    />
+    <img
+      src="plots_folder_diag/sst_ano_forecast_glo_202111_m1.png"
+      alt="sst_ano_forecast_glo_202111_m1"
+    />
+    <img
+      src="plots_folder_diag/t2m_ano_forecast_glo_202111_m1.png"
+      alt="t2m_ano_forecast_glo_202111_m1"
+    />
 
-        <img src="plots_folder_diag/SIE_202111.png" alt="SIE_202111"/>
-        <img src="plots_folder_diag/SPS3.5_202111_sss_timeseries.png" alt="SPS3_5_202111_sss_timeseries"/>
-        <img src="plots_folder_diag/SPS3.5_202111_sst_timeseries.png" alt="SPS3_5_202111_sst_timeseries"/>
-        <img src="plots_folder_diag/mslp_ano_forecast_glo_202111_m1.png" alt="mslp_ano_forecast_glo_202111_m1"/>
-        <img src="plots_folder_diag/precip_ano_forecast_glo_202111_m1.png" alt="precip_ano_forecast_glo_202111_m1"/>
-        <img src="plots_folder_diag/sst_ano_forecast_glo_202111_m1.png" alt="sst_ano_forecast_glo_202111_m1"/>
-        <img src="plots_folder_diag/t2m_ano_forecast_glo_202111_m1.png" alt="t2m_ano_forecast_glo_202111_m1"/>
-
-        <img src="plots_folder_diag_lead/mslp_ano_forecast_glo_202111_lead0.png" alt="mslp_ano_forecast_glo_202111_lead0 "/>
-        <img src="plots_folder_diag_lead/mslp_ano_forecast_glo_202111_lead1.png" alt="mslp_ano_forecast_glo_202111_lead1 "/>
-        <img src="plots_folder_diag_lead/precip_ano_forecast_glo_202111_lead0.png" alt="precip_ano_forecast_glo_202111_lead0 "/>
-        <img src="plots_folder_diag_lead/precip_ano_forecast_glo_202111_lead1.png" alt="precip_ano_forecast_glo_202111_lead1 "/>
-        <img src="plots_folder_diag_lead/sst_ano_forecast_glo_202111_lead0.png" alt="sst_ano_forecast_glo_202111_lead0 "/>
-        <img src="plots_folder_diag_lead/sst_ano_forecast_glo_202111_lead1.png" alt="sst_ano_forecast_glo_202111_lead1 "/>
-        <img src="plots_folder_diag_lead/t2m_ano_forecast_glo_202111_lead0.png" alt="t2m_ano_forecast_glo_202111_lead0 "/>
-        <img src="plots_folder_diag_lead/t2m_ano_forecast_glo_202111_lead1.png" alt="t2m_ano_forecast_glo_202111_lead1 "/>
-
-    </body>
+    <img
+      src="plots_folder_diag_lead/mslp_ano_forecast_glo_202111_lead0.png"
+      alt="mslp_ano_forecast_glo_202111_lead0 "
+    />
+    <img
+      src="plots_folder_diag_lead/mslp_ano_forecast_glo_202111_lead1.png"
+      alt="mslp_ano_forecast_glo_202111_lead1 "
+    />
+    <img
+      src="plots_folder_diag_lead/precip_ano_forecast_glo_202111_lead0.png"
+      alt="precip_ano_forecast_glo_202111_lead0 "
+    />
+    <img
+      src="plots_folder_diag_lead/precip_ano_forecast_glo_202111_lead1.png"
+      alt="precip_ano_forecast_glo_202111_lead1 "
+    />
+    <img
+      src="plots_folder_diag_lead/sst_ano_forecast_glo_202111_lead0.png"
+      alt="sst_ano_forecast_glo_202111_lead0 "
+    />
+    <img
+      src="plots_folder_diag_lead/sst_ano_forecast_glo_202111_lead1.png"
+      alt="sst_ano_forecast_glo_202111_lead1 "
+    />
+    <img
+      src="plots_folder_diag_lead/t2m_ano_forecast_glo_202111_lead0.png"
+      alt="t2m_ano_forecast_glo_202111_lead0 "
+    />
+    <img
+      src="plots_folder_diag_lead/t2m_ano_forecast_glo_202111_lead1.png"
+      alt="t2m_ano_forecast_glo_202111_lead1 "
+    />
+  </body>
 </html>
