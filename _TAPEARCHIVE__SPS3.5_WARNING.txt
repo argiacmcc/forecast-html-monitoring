@@ -1,0 +1,6 @@
+Warning on login03 - You are trying to remove a pre-existing file from TAPE, before crsync it, with: crm dirtocreatefile 
+ This procedure is not allowed by default, unless you are completely sure about it. 
+ To let the program remove file from tape and sync it again for caso you must create a trafficlight file by: 
+ touch file_10 
+ and wait the crontab laucher restart automatically the case_tape_archive.sh for caso . 
+ Script is dirutil ....
