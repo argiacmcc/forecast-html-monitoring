@@ -1,21 +1,32 @@
 import glob, shutil, os
 
+month = input("Please enter the month:\n")
+#print ("the month is")
+#print(type(month))
+year = input("Please enter the year:\n")
+#print ("the year is")
+#print(type(year))
+
+origin_folder='/work/csp/sp1/scratch/'+month+'/'
+'''
+print("path")
+print(origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_01.png')
+'''
 origin_folder='/work/csp/sp1/scratch/11/'
 
-files = [origin_folder+'SPS3.5_sic_obs_assim_IC_202111_01.png', origin_folder+'SPS3.5_sic_obs_assim_IC_202111_02.png', origin_folder+'SPS3.5_sic_obs_assim_IC_202111_03.png', origin_folder+'SPS3.5_sic_obs_assim_IC_202111_04.png', origin_folder+'SPS3.5_sic_obs_assim_IC_202111_05.png', origin_folder+'SPS3.5_sic_obs_assim_IC_202111_06.png', origin_folder+'SPS3.5_sic_obs_assim_IC_202111_07.png', origin_folder+'SPS3.5_sic_obs_assim_IC_202111_08.png', origin_folder+'SPS3.5_sic_obs_assim_IC_202111_09.png']
+files = [origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_01.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_02.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_03.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_04.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_05.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_06.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_07.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_08.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_09.png']
 
 for f in files:
     shutil.copy(f, 'plots_folder')
 
 ###########
-files = ['/work/csp/sp1/scratch/ICCLM2plot/202111/clm_forcing_202111.png', '/work/csp/sp1/CMCC-SPS3.5/WORK_IC4CAM/plots/202111/Uprofile_202111.png', '/work/csp/sp1/scratch/11/noaa_anom_202111.png', '/work/csp/sp1/scratch/11/20211101_all_anom.png']
+files = ['/work/csp/sp1/scratch/ICCLM2plot/'+year+month+'/clm_forcing_'+year+month+'.png', '/work/csp/sp1/CMCC-SPS3.5/WORK_IC4CAM/plots/'+year+month+'/Uprofile_'+year+month+'.png', '/work/csp/sp1/scratch/11/noaa_anom_'+year+month+'.png', '/work/csp/sp1/scratch/11/'+year+month+'01_all_anom.png']
 
 for f in files:
     shutil.copy(f, 'plots_folder')
 
 ###########
-origin_folder_cam = '/work/csp/sp1/CMCC-SPS3.5/WORK_IC4CAM/plots/202111/'
+origin_folder_cam = '/work/csp/sp1/CMCC-SPS3.5/WORK_IC4CAM/plots/'+year+month+'/'
 files = glob.iglob(os.path.join(origin_folder_cam, "*.png"))
 for f in files:
     shutil.copy(f, 'plots_folder')
-
