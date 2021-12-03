@@ -6,6 +6,7 @@ month = input("Please enter the month:\n")
 year = input("Please enter the year:\n")
 #print ("the year is")
 #print(type(year))
+plots_folder_diag = "plots_folder_diag_"+year+month
 
 ###########
 files = ['/work/csp/sp1/scratch/nemo_timeseries/'+year+month'/plots/SPS3.5_'+year+month'_sst_timeseries.png', '/work/csp/sp1/scratch/nemo_timeseries/'+year+month'/plots/SPS3.5_'+year+month'_sss_timeseries.png', '/work/csp/sp1/scratch/SIE/SIE_'+year+month'.png']

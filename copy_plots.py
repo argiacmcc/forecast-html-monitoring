@@ -7,11 +7,15 @@ year = input("Please enter the year:\n")
 #print ("the year is")
 #print(type(year))
 
-origin_folder='/work/csp/sp1/scratch/'+month+'/'
+origin_folder = '/work/csp/sp1/scratch/'+month+'/'
+plots_folder = 'plots_folder_'+year+month
+print(plots_folder)
+
 '''
 print("path")
 print(origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_01.png')
 '''
+
 origin_folder='/work/csp/sp1/scratch/11/'
 
 files = [origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_01.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_02.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_03.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_04.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_05.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_06.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_07.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_08.png', origin_folder+'SPS3.5_sic_obs_assim_IC_'+year+month+'_09.png']
