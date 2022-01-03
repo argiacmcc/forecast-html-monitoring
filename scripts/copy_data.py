@@ -9,7 +9,8 @@ print('Using ' + destination_dir + st_date_dir + 'as destination dir')
 
 # DIAGNOSTIC FILES #
 print('Copying diagnostic files')
-diagnostic_files = ['/work/csp/sp1/scratch/runtimediag/'+year+month+'/lead/mslp_ano_forecast_glo_'+year+month+'_lead0.png',
+diagnostic_files = ['/work/csp/sp1/scratch/SIE/SIE_'+year+month+'.png',
+'/work/csp/sp1/scratch/runtimediag/'+year+month+'/lead/mslp_ano_forecast_glo_'+year+month+'_lead0.png',
 '/work/csp/sp1/scratch/runtimediag/'+year+month+'/lead/mslp_ano_forecast_glo_'+year+month+'_lead1.png',
 '/work/csp/sp1/scratch/runtimediag/'+year+month+'/lead/precip_ano_forecast_glo_'+year+month+'_lead0.png',
 '/work/csp/sp1/scratch/runtimediag/'+year+month+'/lead/precip_ano_forecast_glo_'+year+month+'_lead1.png',
