@@ -89,93 +89,42 @@
       .after-box {
         clear: left;
       }
-
-      .my-button {
-        font-family: georgia;
-        font-size: 60px;
-        font-style: bold;
-        left: 40%;
-        position: absolute;
-        color: rgb(46, 30, 30);
-        background-color: #ffffff00;
-        border-style: solid;
-        height: auto;
-        width: 25%;
-        border-width: 5px;
-        text-align: center;
-      }
-
-      li {
-        display: block;
-        float: center;
-        padding: 50px;
-      }
     </style>
   </head>
 
   <!-- BODY BODY BODY -->
   <body>
     <header>
-      SEASONAL FORECAST REPORT <br />
+        SEASONAL FORECAST REPORT <br />
       <br />
     </header>
+    
+<!-- per aggiungere la top nav bar bisogna risolvere il problema dei link in top_bar_nav -->
 
-    <!--Navigation bar-->
-    <div id="top_bar_nav"></div>
-
-    <script>
-      $(function () {
-        $("#top_bar_nav").load("./top_bar_nav.html");
-      });
-    </script>
-    <!--end of Navigation bar-->
-    <h1 style="background-color: #00c0ef; color: white; text-align: center">
-      DIAGNOSTICS
+    <h1 style="background-color: #f39c12; color: white; text-align: center">
+        WARNINGS
     </h1>
+    <style>
+        #bannerimage {
+                        width: 100%;
+                        background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+                        height: 805px;
+                        background-color: purple;
+                        background-position: center;
+        }
+        img {
+            max-width: 100%;
+            height:auto;
+        }
+        p.username {
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        
+        <h2>starting date 202111</h2>
 
-    <ul>
-      <li>
-        <div>
-          <a href="st_202111/diagnostic.html">
-            <p class="my-button">202111</p>
-          </a>
-        </div>
-      </li>
+      <a href="txt_warning_files/text_sample_2.txt"><h1>SPS3.5 FORECAST WARNING - QA CHECKER</h1></a>
 
-      <li>
-        <div>
-          <a href="st_202112/diagnostic.html">
-            <p class="my-button">202112</p>
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div>
-          <a href="st_202201/diagnostic.html">
-            <p class="my-button">202201</p>
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div>
-          <a href="st_202202/diagnostic.html">
-            <p class="my-button">202202</p>
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div>
-          <a href="st_202203/diagnostic.html">
-            <p class="my-button">202203</p>
-          </a>
-        </div>
-      </li>
-
-
-
-    </ul>
-  </body>
+    </body>
 </html>
